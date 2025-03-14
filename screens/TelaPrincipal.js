@@ -8,8 +8,14 @@ export default function TelaPrincipal() {
   const [valorDesconto, setValorDesconto] = useState("");
   const [mostrarDados, setMostrarDados] = useState(false);
 
-  return (
+  return (     
     <View style={styles.container}>
+      <Image
+        source={{
+          uri: '../assets/images.png',
+        }}
+        style={styles.imagem}
+      />    
       <TextInput
         style={styles.input}
         placeholder="Digite o nome do produto"
